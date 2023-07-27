@@ -35,7 +35,7 @@ function dropTables()
         {
             $stmt->execute();
         }
-        catch(PDOException $e)
+        catch(\PDOException $e)
         {
             echo $e->getMessage();
             

@@ -27,7 +27,7 @@ function truncateTable($db, $tableName)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         

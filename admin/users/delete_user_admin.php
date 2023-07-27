@@ -72,7 +72,7 @@ if ($_POST) {
                 }
             }
         }
-    } catch (PDOException $exception) {
+    } catch (\PDOException $exception) {
         die('ERROR: ' . $exception->getMessage());
     }
 

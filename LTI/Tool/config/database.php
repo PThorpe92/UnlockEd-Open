@@ -1,11 +1,11 @@
 <?php
-namespace unlockedlabs\unlocked;
+namespace LTITool;
 class Database
 {
 
 	// specify your own database credentials
 	private $host = "localhost";
-	private $db_name = "learning_center_api_db";
+	private $db_name = "learning_center_api_lti_tool";
 	private $username = "root";
 	private $password = "admin";
 	public $conn;

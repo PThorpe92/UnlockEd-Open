@@ -92,6 +92,62 @@ namespace unlockedlabs\unlocked;
             </form>
             <!-- /login card -->
 
+
+
+            <!-- EULA Modal -->
+            <div class="modal fade" id="eulaModal" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="eulaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eulaModalLabel">Terms and Conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                <div class="accordion" id="eulaAccordion">
+            <div class="card">
+                <div class="card-header" id="eulaHeadingOne">
+                <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#eulaCollapseOne" aria-expanded="true" aria-controls="eulaCollapseOne">
+                    Student Terms
+                    </button>
+                </h2>
+                </div>
+
+                <div id="eulaCollapseOne" class="collapse show" aria-labelledby="eulaHeadingOne" data-parent="#eulaAccordion">
+                <div class="card-body">
+                    <?php require_once dirname(__FILE__).'/EULA/EULAStudent.php';?>
+                </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="eulaHeadingTwo">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#eulaCollapseTwo" aria-expanded="false" aria-controls="eulaCollapseTwo">
+                            License
+                    </button>
+                </h2>
+                </div>
+                <div id="eulaCollapseTwo" class="collapse" aria-labelledby="eulaHeadingTwo" data-parent="#eulaAccordion">
+                <div class="card-body">
+                <?php require_once dirname(__FILE__).'/EULA/EULA.php';?>
+            
+                </div>
+                </div>
+            </div>
+    
+            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- /EULA Modal -->
+
+
             <!-- Registration form -->
             <!--form method="post" action="#" id="registration_card" class="flex-fill invisible">
                 <div class="row">

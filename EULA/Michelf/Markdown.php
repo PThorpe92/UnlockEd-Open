@@ -952,7 +952,8 @@ class Markdown implements MarkdownInterface {
             return $matches[0];
         }
 
-        $level = $matches[2]{0} == '=' ? 1 : 2;
+        // $level = $matches[2]{0} == '=' ? 1 : 2;
+        $level = $matches[2][0] == '=' ? 1 : 2;
 
         // ID attribute generation
         $idAtt = $this->_generateIdFromHeaderValue($matches[1]);

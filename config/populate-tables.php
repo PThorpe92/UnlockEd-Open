@@ -32,7 +32,7 @@ function truncateTable($db, $tableName)
     {
         $stmt->execute();        
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -51,7 +51,7 @@ function insertIntoCategories($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -71,7 +71,7 @@ function insertIntoUsers($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -93,7 +93,7 @@ function insertIntoAccessLevels($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -115,7 +115,7 @@ function insertIntoAdminLevels($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -132,7 +132,7 @@ function insertIntoUserPreferences($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -151,7 +151,7 @@ function insertIntoGamification($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -172,7 +172,7 @@ function insertIntoSiteSettings($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
         
@@ -206,7 +206,7 @@ function insertIntoAdminPrivileges($db)
     {
         $stmt->execute();
     }
-    catch(PDOException $e)
+    catch(\PDOException $e)
     {
         echo $e->getMessage();
     }
